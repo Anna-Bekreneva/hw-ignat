@@ -1,0 +1,142 @@
+@import './reset.css';
+
+.container {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+}
+
+/************************************************/
+
+.button {
+    padding: 4px 16px;
+    border: 1px solid #002200;
+    border-radius: 8px;
+    transition: opacity 0.4s, box-shadow 0.4s, border-color 0.4s, color 0.4s;
+}
+
+.button--active {
+    background-color: #002200;
+    color: white;
+    pointer-events: none;
+}
+
+.button:focus {
+    box-shadow: 0 0 0 2px #99be9c;
+    border-color: transparent;
+}
+
+.button:hover {
+    color: #0c6d0c;
+    border-color: #0c6d0c;
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+.button:disabled {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.del {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    border: 1px solid transparent;
+    transition: border-color 0.4s;
+    border-radius: 6px;
+}
+
+.del::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./close.svg');
+    opacity: 0.7;
+    transition: filter 0.4s, opacity 0.4s;
+}
+
+.del:focus {
+    border-color: #e73d3d;
+}
+
+.del:hover::before {
+    filter: invert(33%) sepia(32%) saturate(5617%) hue-rotate(343deg) brightness(100%) contrast(82%);
+}
+
+.del:active::before {
+    opacity: 0.6;
+}
+
+/************************************************/
+
+.field {
+    border: 1px solid #002200;
+    border-radius: 6px;
+    padding: 8px 12px;
+    transition: border-color 0.4s, box-shadow 0.4s;
+}
+
+.field::placeholder {
+    transition: color 0.4s;
+}
+
+.field:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px #99be9c;
+}
+
+.field:hover::placeholder {
+    color: #002200;
+}
+
+.field--error {
+    border-color: #e73d3d;
+}
+
+.field--error::placeholder {
+    color: #e73d3d;
+}
+
+.error {
+    display: block;
+    color: #e73d3d;
+    margin-bottom: 8px;
+}

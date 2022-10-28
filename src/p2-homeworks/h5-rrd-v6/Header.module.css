@@ -1,0 +1,51 @@
+.nav {
+    padding: 50px 0;
+}
+
+.nav:hover .nav__items {
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav__items {
+    display: flex;
+    visibility: hidden;
+    position: relative;
+    opacity: 0;
+    top: -200px;
+    transition: opacity 0.4s, top 0.4s;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #080880;
+    transition: color 0.4s, box-shadow 0.4s, opacity 0.4s;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.nav__link:focus {
+    box-shadow: 0 0 0 2px #080880;
+}
+
+.nav__link:hover {
+    color: #002200;
+}
+
+.nav__link:active {
+    opacity: 0.6;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+}
+
+.nav__button {
+    margin-right: 16px;
+}

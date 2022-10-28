@@ -1,0 +1,24 @@
+/*.button {*/
+/*    padding: 4px 16px;*/
+/*    border: 1px solid #002200;*/
+/*    border-radius: 8px;*/
+/*    transition: opacity 0.4s, box-shadow 0.4s, border-color 0.4s, color 0.4s;*/
+/*}*/
+
+/*.button:focus {*/
+/*    box-shadow: 0 0 0 2px #99be9c;*/
+/*    border-color: transparent;*/
+/*}*/
+
+/*.button:hover {*/
+/*    color: #0c6d0c;*/
+/*    border-color: #0c6d0c;*/
+/*}*/
+
+/*.button:active {*/
+/*    opacity: 0.6;*/
+/*}*/
+
+/*.red {*/
+/*    background: red;*/
+/*}*/

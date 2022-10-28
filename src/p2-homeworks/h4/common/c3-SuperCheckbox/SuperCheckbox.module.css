@@ -1,0 +1,65 @@
+.checkbox {
+
+}
+
+.spanClassName {
+
+}
+
+.item {
+    display: flex;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.visible {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: 1px solid #002200;
+    border-radius: 6px;
+    transition: background-color 0.4s, border-color 0.4s, box-shadow 0.4s, border-color 0.4s, opacity 0.4s;
+    margin-right: 8px;
+}
+
+.visible::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    background-image: url('./check.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: invert(100%) sepia(8%) saturate(7467%) hue-rotate(292deg) brightness(119%) contrast(80%);
+}
+
+.hidden:checked + .visible {
+    background-color: #002200;
+}
+
+.hidden:checked + .visible::before {
+    opacity: 1;
+}
+
+.hidden:focus + .visible {
+    box-shadow: 0 0 0 2px #99be9c;
+    border-color: transparent;
+}
+
+.hidden:hover + .visible {
+    opacity: 0.7;
+}

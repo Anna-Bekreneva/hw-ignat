@@ -1,0 +1,32 @@
+.greeting__top,
+.greeting__counter {
+    display: flex;
+}
+
+.greeting__top {
+    margin-bottom: 4px;
+}
+
+.greeting__field {
+    max-width: 200px;
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.greeting__button {
+    background-color: #002200;
+    color: white;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.greeting__button:hover {
+    color: white;
+    opacity: 0.8;
+}
+
+.greeting__number {
+    margin-left: 4px;
+    font-weight: 600;
+}

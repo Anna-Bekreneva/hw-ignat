@@ -1,0 +1,58 @@
+.cart {
+    display: flex;
+    font-size: 16px;
+    align-items: flex-end;
+}
+
+.content {
+    background-color: #002200;
+    border-radius: 12px;
+    padding: 15px;
+    max-width: 250px;
+    width: 100%;
+    position: relative;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: -4px;
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-color: #002200 transparent transparent #002200;
+    border-radius: 6px;
+    transform: rotate(-56deg);
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.name {
+    color: #a099be;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.message {
+    color: #8aa383;
+}
+
+.time {
+    color: #355736;
+}
+

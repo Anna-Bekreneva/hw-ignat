@@ -1,0 +1,11 @@
+.affairs {
+    margin-bottom: 25px;
+}
+
+.items {
+    display: flex;
+}
+
+.item:not(:last-child) {
+    margin-right: 15px;
+}

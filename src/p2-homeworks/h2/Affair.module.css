@@ -1,0 +1,28 @@
+
+
+.affair {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 310px;
+    width: 100%;
+}
+
+.affair:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.priority,
+.name {
+    margin-right: 20px;
+}
+
+.priority {
+    width: 20%;
+    color: #0c6d0c;
+}
+
+.name {
+    width: 70%;
+    font-weight: 500;
+}
